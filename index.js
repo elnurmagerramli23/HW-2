@@ -84,7 +84,7 @@ function getHourglass(size) {
 
     for ( let i = 0; i < size; i++ ) {
         for ( let j = 0; j < size; j++ ) {
-            if ((i === size - 1 - j) || i === j || (i < j && i + j < size ) || ( j < i && i + j >= size) ) {
+            if ( (i === size - 1 - j) || i === j || (i < j && i + j < size ) || ( j < i && i + j >= size) ) {
                 hourglass += "*";
             } else { 
                 hourglass += " ";
